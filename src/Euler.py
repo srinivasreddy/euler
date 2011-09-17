@@ -103,7 +103,7 @@ def diff_squaresofsum_and_sumofsquares(n):
 
 
 def tenthousandonethprime():
-    count=0
+    count=1
     for i in genprime():
         count=count+1
             #print i
