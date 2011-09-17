@@ -8,7 +8,7 @@ Created on Sep 14, 2011
 """
     generates the fibonacci numbers until upper limit
 """
-def genfibo(upper):
+def gen_fibo(upper):
     i,j=1,2    
     while i<upper:        
         yield i
@@ -17,7 +17,7 @@ def genfibo(upper):
 """
 the trianle number sequence is .. 1 3  6 10 15 21
 """
-def gentrianglenum():
+def gen_triangle_num():
     yield 1
     summation=1
     i=2
@@ -26,9 +26,9 @@ def gentrianglenum():
         yield summation
    
         
-def sumofprimesbelow2million():
+def sum_of_primes_below_2million():
     summation=0
-    for i in genprime():
+    for i in gen_prime():
         if(i<2000000):
             summation+=i
     return summation
@@ -36,7 +36,7 @@ def sumofprimesbelow2million():
 """
 function to generate infinite prime numbers!!!
 """
-def genprime():
+def gen_prime():
     yield 1
     yield 2
     x=3
@@ -100,7 +100,7 @@ def diff_squaresofsum_and_sumofsquares(n):
 
 def tenthousandonethprime():
     count=1
-    for i in genprime():
+    for i in gen_prime():
         count=count+1
         if(count==10001):
             print "10001th prime is :" ,i
@@ -116,14 +116,16 @@ def sumbyfilter():
 problem #2
 """        
 def fibo_sum():
-    return sum(filter(lambda a: a%2==0, genfibo(4000000)))
+    return sum(filter(lambda a: a%2==0, gen_fibo(4000000)))
 
+"""
 def gen_prime_reverse(num):
     if(num%2==0):
         num=num-1     
     for x in range(num-1,1,-2):        
         if(num%x==0 and no_of_multipliers(num/x)):
             yield x
+"""
 
 """
 is there a better way to do it,other than this seemingly brute force way?
