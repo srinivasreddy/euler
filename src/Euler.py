@@ -145,7 +145,7 @@ def largest_three_digit_palindrome():
     print palindrome,tempx,tempy
     
 
-def product_of_five_digits(largestring):
+"""def product_of_five_digits(largestring):
     import itertools
     largest=0
     window=0
@@ -155,7 +155,7 @@ def product_of_five_digits(largestring):
         if(largest<temp):
             largest=temp
         window+=5
-    return largestring
+    return largestring"""
 
   
       
