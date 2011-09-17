@@ -24,11 +24,7 @@ def gentrianglenum():
     while True:
         summation,i=summation+i,(i+1)       
         yield summation
-
-"""def calnoofdivisors(n):        
-    count=1
-    """
-    
+   
         
 def sumofprimesbelow2million():
     summation=0
@@ -106,7 +102,6 @@ def tenthousandonethprime():
     count=1
     for i in genprime():
         count=count+1
-            #print i
         if(count==10001):
             print "10001th prime is :" ,i
             break
@@ -164,6 +159,6 @@ def largest_three_digit_palindrome():
 
 
 if __name__ == '__main__':
-   print product_of_five_digits("1234567899") 
+    #call the functions to test them
     
         
