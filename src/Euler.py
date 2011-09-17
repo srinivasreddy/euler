@@ -152,12 +152,6 @@ def largest_three_digit_palindrome():
         window+=5
     return largestring"""
 
-  
-      
-        
-    
-
-
 if __name__ == '__main__':
     #call the functions to test them
     
