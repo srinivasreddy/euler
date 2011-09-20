@@ -275,13 +275,11 @@ def sum_of_digits_in_two_power_onethousand():
     
         
 
-def summing(one,two):
-    #below code is commented because we are sending the same digits for summation
-    """if(len(one)<len(two)):        
+def summing(one,two):    
+    if(len(one)<len(two)):        
         one=one.rjust(len(two),'0')        
     elif(len(one)>len(two)):        
-        two=two.rjust(len(one),'0')
-    """
+        two=two.rjust(len(one),'0')    
     temp=0
     result=""
     for i,j in zip(one[::-1],two[::-1]):
@@ -302,7 +300,10 @@ def longest_sequence(n,count):
         return longest_sequence(n/2,count=count+1)
     else:
         return longest_sequence(3*n+1,count=count+1)
-        
+
+"""
+euler problem -14
+"""        
 def collatz_conjecture():
     max=0
     num=0
@@ -314,13 +315,37 @@ def collatz_conjecture():
             num=i 
         dict[i]=temp       
     return  max,num,dict
-
+"""
+euler probelm - 17
+"""
+dicone = {1:"one",2:"two",6:"six",3:"three",7:"seven",8:"eight",4:"four",5:"five",9:"nine"}
+dictwo = {1:"ten",2:"twenty",6:"sixty",3:"thirty",7:"seventy",8:"eighty",4:"forty",5:"fifty",9:"ninety"}
+def number_to_stringfy(n):
+    string=str(n)
+    if(len(string)==3):
+        return dicone[int(string[0])],"hundred and ",dictwo.getdefault(int(string[1]),"zero")
+     
+"""
+euler problem-25
+"""
+def one_thousand_digit_fibo():
+    one=1
+    two=1
+    while True:
+        one,two = two,summing(str(one), str(two))
+        if(len(two)>=1000):
+            print "previous num digits count" ,len(one)
+            print "1000th  num digits count" ,len(two)
+            break
+    return two
 
 if __name__ == '__main__':
     #call the functions to test them    
     #collatz_conjecture()
+    print one_thousand_digit_fibo()
+    
     #8083
-    print sum_of_digits_in_two_power_onethousand()
-    max,num,dict = collatz_conjecture()
-    print "max num of seq are :",max,"\n for number :",num
+    #print sum_of_digits_in_two_power_onethousand()
+    #max,num,dict = collatz_conjecture()
+    #print "max num of seq are :",max,"\n for number :",num
     
