@@ -265,18 +265,6 @@ def largest_three_digit_palindrome():
     print palindrome,tempx,tempy
     
 
-"""def product_of_five_digits(largestring):
-    import itertools
-    largest=0
-    window=0
-    temp=1
-    for i in largestring[0+window:5+window]:
-        temp=temp*int(i)
-        if(largest<temp):
-            largest=temp
-        window+=5
-    return largestring"""
-
 if __name__ == '__main__':
     #call the functions to test them
     print sum_of_last_ten_digits()
