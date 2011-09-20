@@ -130,11 +130,6 @@ def sum_of_last_ten_digits():
         temp,summation = temp/10,(summation+str(temp%10))   
     return int(summation[::-1])
 
-
-def string_list_zip(list):
-    zipped=None
-    
-    return zipped
     
 def string_chunking(string,length):
     index=0
