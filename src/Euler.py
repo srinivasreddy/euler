@@ -270,8 +270,7 @@ euler problem 16,another way to solve
 def sum_of_digits_in_two_power_onethousand():
     summation=1
     for i in range(0,1000):        
-        summation = summing(str(summation),str(summation)) 
-        
+        summation = summing(str(summation),str(summation))         
     return sum([int(j) for j in summation])       
     
         
@@ -295,14 +294,33 @@ def summing(one,two):
     if(result.startswith('0')):
         return result[1:]
     return result
-    
-    
-           
-    
 
+def longest_sequence(n,count):
+    if(n==1):
+        return count
+    if(n%2==0):
+        return longest_sequence(n/2,count=count+1)
+    else:
+        return longest_sequence(3*n+1,count=count+1)
+        
+def collatz_conjecture():
+    max=0
+    num=0
+    dict={}
+    for i in range(1000000,0,-1):
+        temp=longest_sequence(i, 0)
+        if(temp>max):
+            max=temp
+            num=i 
+        dict[i]=temp       
+    return  max,num,dict
 
 
 if __name__ == '__main__':
     #call the functions to test them    
-    print two_power_onethousand()
+    #collatz_conjecture()
     #8083
+    print sum_of_digits_in_two_power_onethousand()
+    max,num,dict = collatz_conjecture()
+    print "max num of seq are :",max,"\n for number :",num
+    
