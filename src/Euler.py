@@ -264,8 +264,42 @@ def largest_three_digit_palindrome():
                 palindrome,tempx,tempy=temp,x,y
     print palindrome,tempx,tempy
     
+"""
+euler problem 16,another way to solve
+"""
+def two_power_onethousand():
+    summation=1
+    for i in range(0,1000):        
+        summation = summing(str(summation),str(summation))            
+    return summation
+
+def summing(one,two):
+    #below code is commented because we are sending the same digits for summation
+    """if(len(one)<len(two)):        
+        one=one.rjust(len(two),'0')        
+    elif(len(one)>len(two)):        
+        two=two.rjust(len(one),'0')
+    """
+    temp=0
+    result=""
+    for i,j in zip(one[::-1],two[::-1]):
+        temp=temp+int(i)+int(j)
+        result=result+str(temp%10)
+        temp=temp/10
+    temp=str(temp)[::-1]    
+    result=result+temp
+    result=result[::-1]
+    if(result.startswith('0')):
+        return result[1:]
+    return result
+    
+    
+           
+    
+
+
 
 if __name__ == '__main__':
-    #call the functions to test them
-    print sum_of_last_ten_digits()
-        
+    #call the functions to test them    
+    print two_power_onethousand()
+    #8083
