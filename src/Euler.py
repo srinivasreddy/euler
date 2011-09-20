@@ -267,11 +267,14 @@ def largest_three_digit_palindrome():
 """
 euler problem 16,another way to solve
 """
-def two_power_onethousand():
+def sum_of_digits_in_two_power_onethousand():
     summation=1
     for i in range(0,1000):        
-        summation = summing(str(summation),str(summation))            
-    return summation
+        summation = summing(str(summation),str(summation)) 
+        
+    return sum([int(j) for j in summation])       
+    
+        
 
 def summing(one,two):
     #below code is commented because we are sending the same digits for summation
