@@ -1,5 +1,7 @@
 def pascaltriangle(n):
     yield [1]
+    if(n==1):
+       return
     yield [1,1]
     temp=[1,1]
     counter=2
