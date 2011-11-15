@@ -13,6 +13,7 @@ def ispalindrome(num):
 
 """
 is there a better way to do it,other than this seemingly brute force way?
+TODO:need to think about a better way of doing this...
 """        
 def largest_three_digit_palindrome():
     import itertools
