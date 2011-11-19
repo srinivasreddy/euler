@@ -18,10 +18,8 @@ def pascal_triangle(n):
 
 ##usage of pascal triangle..
 
-for i in pascal_traingle(9):
+for i in pascal_traingle(8):
     print i
-"""
-
 """
 [1]
 [1, 1]
@@ -31,3 +29,4 @@ for i in pascal_traingle(9):
 [1, 5, 10, 10, 5, 1]
 [1, 6, 15, 20, 15, 6, 1]
 [1, 7, 21, 35, 35, 21, 7, 1]
+"""
