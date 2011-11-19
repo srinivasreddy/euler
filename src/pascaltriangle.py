@@ -18,7 +18,7 @@ def pascal_triangle(n):
 
 ##usage of pascal triangle..
 
-for i in pascal_traingle(8):
+for i in pascal_triangle(8):
     print i
 """
 [1]
