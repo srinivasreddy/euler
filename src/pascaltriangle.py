@@ -1,10 +1,10 @@
-def pascaltriangle(n):
+def pascal_triangle(n):
     yield [1]
-    if(n==1):
+    if(n==0):
        return
     yield [1,1]
     temp=[1,1]
-    counter=2
+    counter=1
     while counter<n:
           k=0
           another=[]
@@ -18,7 +18,7 @@ def pascaltriangle(n):
 
 ##usage of pascal triangle..
 
-for i in pascaltraingle(8):
+for i in pascal_traingle(9):
     print i
 """
 
