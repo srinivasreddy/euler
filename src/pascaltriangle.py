@@ -13,9 +13,13 @@ def pascal_triangle(n):
           yield another
 
 ##usage of pascal triangle..
-for i in pascal_triangle(7):
-    print i
+def main():
+    for i in pascal_triangle(7):
+        print i
 
+if  __name__=="__main__":
+    print "I am printing a pascal triangle upto 7th power"
+    main()
 
 """
 For n you will get n+1 rows because 0'th power is also included in the series. 
