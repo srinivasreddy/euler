@@ -1,11 +1,7 @@
 def pascal_triangle(n):
-    yield [1]
-    if(n==0):
-       return
-    yield [1,1]
-    temp=[1,1]
-    counter=1
-    while counter<n:
+    temp=[]
+    counter=0
+    while counter<=n:
           k=0
           another=[]
           for i in temp:
@@ -17,10 +13,12 @@ def pascal_triangle(n):
           yield another
 
 ##usage of pascal triangle..
-
-for i in pascal_triangle(8):
+for i in pascal_triangle(7):
     print i
+
+
 """
+For n you will get n+1 rows because 0'th power is also included in the series. 
 [1]
 [1, 1]
 [1, 2, 1]
