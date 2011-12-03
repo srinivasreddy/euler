@@ -26,4 +26,4 @@ def no_of_multipliers(x):
 
 
 if __name__=="__main__":   
-   print ten_thousand_one_prime():,"is 10,001th prime number"
+   print ten_thousand_one_prime(),"is 10,001th prime number"
