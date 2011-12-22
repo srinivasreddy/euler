@@ -11,3 +11,5 @@ def gen_fibo(upper):
 def fibo_sum():
     return sum(filter(lambda a: a%2==0, gen_fibo(4000000)))
 
+if __name__=="__main__":
+   print fibo_sum()
