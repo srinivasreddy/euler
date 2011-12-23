@@ -8,3 +8,6 @@ def diff_squaresofsum_and_sumofsquares(n):
     squaresofsum = sumofnum*sumofnum
     return  squaresofsum- sumofsquares
 
+if __name__=="__main__":
+   print diff_squaresofsum_and_sumofsquares(100)
+

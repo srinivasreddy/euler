@@ -12,6 +12,7 @@ def gen_prime():
 
 def ten_thousand_one_prime():
    for i,nth in gen_prime():
+       print  nth,"nth is ",i
        if(nth==10001):
           return i
 

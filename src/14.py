@@ -21,7 +21,7 @@ def collatz_conjecture():
             max=temp
             num=i 
         dict[i]=temp       
-    return  max,num,dict
+    return  max,num
 
 
 if __name__=="__main__":

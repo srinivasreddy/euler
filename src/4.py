@@ -25,3 +25,7 @@ def largest_three_digit_palindrome():
              palindrome,tempx,tempy=temp,x,y
     print palindrome,tempx,tempy
 
+
+if __name__=="__main__":
+   largest_three_digit_palindrome()
+   

@@ -20,3 +20,5 @@ def min_divisor():
         x=lcm(x,i)
     print x
 
+if __name__=="__main__":
+   min_divisor()
