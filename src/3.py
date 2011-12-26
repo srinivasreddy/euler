@@ -28,8 +28,6 @@ def largest_primefactor():
     return temp
 
 if __name__=="__main__":
-   print is_prime(100)
-   print is_prime(7)
    print largest_primefactor()
 
 
