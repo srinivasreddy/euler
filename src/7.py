@@ -1,9 +1,9 @@
 import math
 
 def gen_prime():
-    yield 1,1
-    yield 2,2
-    count=x=3
+    yield 2,1
+    count=2
+    x=3
     while True:
         if(no_of_multipliers(x)):
             yield x,count
@@ -11,9 +11,8 @@ def gen_prime():
         x=x+2
 
 def ten_thousand_one_prime():
-   for i,nth in gen_prime():
-       print  nth,"nth is ",i
-       if(nth==10001):
+    for i,nth in gen_prime():
+        if(nth==10001):
           return i
 
 def no_of_multipliers(x):
