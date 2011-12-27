@@ -118,5 +118,5 @@ if __name__ =="__main__":
            carry=0
         summation =str(temp%10)+summation
    summation = str(carry)+summation
-   print summation
+   print summation[:10]
         
