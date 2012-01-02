@@ -13,7 +13,7 @@ def is_palindrome(num):
 def is_lycheral(n,count=50):
     temp = n+int(str(n)[::-1])
     print n
-    if(count==-1):
+    if(count==0):
 	return True
     if(is_palindrome(temp)):
        return False
