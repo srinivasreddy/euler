@@ -1,5 +1,6 @@
 from decimal import Decimal
 from fractions import Fraction
+from operator import mul
 
 if __name__ =="__main__":
    listt=[]
@@ -10,8 +11,8 @@ if __name__ =="__main__":
 		  xdenom=int(str(denom)[1])
                   if(xdenom!=0 and Fraction(num,denom)==Fraction(xnum,xdenom)):
                       listt.append(Fraction(num,denom))
-   x = reduce(lambda x,y :x*y,(i.numerator for i in listt))
-   y = reduce(lambda x,y :x*y,(i.denominator for i in listt))
+   x = reduce(mul,(i.numerator for i in listt))
+   y = reduce(mul,(i.denominator for i in listt))
    print Fraction(x,y).denominator
                       
       
