@@ -11,9 +11,8 @@ if __name__ =="__main__":
 		  xdenom=int(str(denom)[1])
                   if(xdenom!=0 and Fraction(num,denom)==Fraction(xnum,xdenom)):
                       listt.append(Fraction(num,denom))
-   x = reduce(mul,(i.numerator for i in listt))
-   y = reduce(mul,(i.denominator for i in listt))
-   print Fraction(x,y).denominator
+   print reduce(mul,(i for i in listt)).denominator
+
                       
       
                   
