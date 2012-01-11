@@ -5,7 +5,7 @@ euler problem -14
 
 def longest_sequence(n,count):
     if(n==1):
-        return count
+        return count+1
     if(n%2==0):
         return longest_sequence(n/2,count=count+1)
     else:
@@ -26,3 +26,4 @@ def collatz_conjecture():
 
 if __name__=="__main__":
    print collatz_conjecture()
+    #print longest_sequence(13,0)

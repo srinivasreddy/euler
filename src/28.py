@@ -1,3 +1,4 @@
+
 def gen_sequence():
    start=1
    yield start

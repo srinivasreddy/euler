@@ -9,7 +9,7 @@ Created on Sep 14, 2011
     generates the fibonacci numbers until upper limit
 """
 def gen_fibo(upper):
-    i,j=1,2    
+    i,j=0,1   
     while i<upper:        
         yield i
         i,j=j,(i+j)
@@ -237,7 +237,13 @@ def sumbyfilter():
 
 """
 problem #2
-"""        
+""" 
+def gen_fibo(upper):
+    i,j=0,1   
+    while i<upper:        
+        yield i
+        i,j=j,(i+j)
+       
 def fibo_sum():
     return sum(filter(lambda a: a%2==0, gen_fibo(4000000)))
 
