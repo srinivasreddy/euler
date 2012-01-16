@@ -8,8 +8,6 @@ def pump_out():
 
 
 if __name__=="__main__":
-   number=1
-   counter=0
    product=1
    for index,value in enumerate(pump_out(),start=1):
        if(index>1000000):
